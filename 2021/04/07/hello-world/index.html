@@ -558,12 +558,22 @@
                 
 
                 
-
+                <div class="post-date info-break-policy">
+                    <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
+                    2021-04-07
+                </div>
                 
 
                 
 
                 
+
+                
+                    <div id="busuanzi_container_page_pv" class="info-break-policy">
+                        <i class="far fa-eye fa-fw"></i>阅读次数:&nbsp;&nbsp;
+                        <span id="busuanzi_value_page_pv"></span>
+                    </div>
+				
             </div>
         </div>
         <hr class="clearfix">
@@ -904,6 +914,43 @@
 </div>
 
 
+<script>
+    $('#articleContent').on('copy', function (e) {
+        // IE8 or earlier browser is 'undefined'
+        if (typeof window.getSelection === 'undefined') return;
+
+        var selection = window.getSelection();
+        // if the selection is short let's not annoy our users.
+        if (('' + selection).length < Number.parseInt('120')) {
+            return;
+        }
+
+        // create a div outside of the visible area and fill it with the selected text.
+        var bodyElement = document.getElementsByTagName('body')[0];
+        var newdiv = document.createElement('div');
+        newdiv.style.position = 'absolute';
+        newdiv.style.left = '-99999px';
+        bodyElement.appendChild(newdiv);
+        newdiv.appendChild(selection.getRangeAt(0).cloneContents());
+
+        // we need a <pre> tag workaround.
+        // otherwise the text inside "pre" loses all the line breaks!
+        if (selection.getRangeAt(0).commonAncestorContainer.nodeName === 'PRE') {
+            newdiv.innerHTML = "<pre>" + newdiv.innerHTML + "</pre>";
+        }
+
+        var url = document.location.href;
+        newdiv.innerHTML += '<br />'
+            + '来源: Blog-Sword<br />'
+            + '文章作者: Sword__song<br />'
+            + '文章链接: <a href="' + url + '">' + url + '</a><br />'
+            + '本文章著作权归作者所有，任何形式的转载都请注明出处。';
+
+        selection.selectAllChildren(newdiv);
+        window.setTimeout(function () {bodyElement.removeChild(newdiv);}, 200);
+    });
+</script>
+
 
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
@@ -1088,8 +1135,8 @@
             
             <span id="year">2021</span>
             <a href="/about" target="_blank">Sword__song</a>
-            |&nbsp;Powered by&nbsp;<a href="https://hexo.io/" target="_blank">Hexo</a>
-            |&nbsp;Theme&nbsp;<a href="https://github.com/blinkfox/hexo-theme-matery" target="_blank">Matery</a>
+            |&nbsp;Powered by&nbsp;<a href="" target="_blank">Hexo</a>
+            |&nbsp;Theme&nbsp;<a href="" target="_blank">Matery</a>
             <br>
             
             
@@ -1125,9 +1172,9 @@
     </a>
 
 
+<!--  -->
 
-
-
+<!--  -->
 
 
     <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=1550185072" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 1550185072" data-position="top" data-delay="50">
@@ -1136,7 +1183,15 @@
 
 
 
+    <a href="https://weibo.com/7190457711/profile?topnav=1&amp;wvr=6" class="tooltipped" target="_blank" data-tooltip="关注我的微博: https://weibo.com/7190457711/profile?topnav=1&amp;wvr=6" data-position="top" data-delay="50">
+        <i class="fab fa-weibo"></i>
+    </a>
 
+
+
+    <a href="https://www.zhihu.com/people/cllis" class="tooltipped" target="_blank" data-tooltip="关注我的知乎: https://www.zhihu.com/people/cllis" data-position="top" data-delay="50">
+        <i class="fab fa-zhihu1">知</i>
+    </a>
 
 
 
