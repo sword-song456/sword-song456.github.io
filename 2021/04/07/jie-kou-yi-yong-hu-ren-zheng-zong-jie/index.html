@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="Hello World, Blog-Sword">
+    <meta name="keywords" content="接口一：用户认证总结, Blog-Sword">
     <meta name="description" content="我是白小剑">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>Hello World | Blog-Sword</title>
+    <title>接口一：用户认证总结 | Blog-Sword</title>
     <link rel="icon" type="image/png" href="/favicon.png">
 
     <link rel="stylesheet" type="text/css" href="/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/5.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">Hello World</h1>
+                    <h1 class="description center-align post-title">接口一：用户认证总结</h1>
                 </div>
             </div>
         </div>
@@ -451,7 +451,7 @@
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    73
+                    230
                 </div>
                 
 
@@ -476,19 +476,43 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <h1 id="接口一：用户认证总结"><a href="#接口一：用户认证总结" class="headerlink" title="接口一：用户认证总结"></a>接口一：用户认证总结</h1><h2 id="1-接口写法"><a href="#1-接口写法" class="headerlink" title="1.接口写法"></a>1.接口写法</h2><h3 id="①："><a href="#①：" class="headerlink" title="①："></a>①：</h3><h3 id="②："><a href="#②：" class="headerlink" title="②："></a>②：</h3><p><code>Http.test().then((res) =&gt; {}).catch()</code></p>
+<p>相当于异步  await</p>
+<h2 id="2-子组件父组件传值"><a href="#2-子组件父组件传值" class="headerlink" title="2.子组件父组件传值"></a>2.子组件父组件传值</h2><h3 id="父组件中-："><a href="#父组件中-：" class="headerlink" title="父组件中 ："></a>父组件中 ：</h3><p>对于子组件增加函数</p>
+<h3 id="子组件中："><a href="#子组件中：" class="headerlink" title="子组件中："></a>子组件中：</h3><p>this.props.函数名  传入参数</p>
+<h2 id="3-路由跳转"><a href="#3-路由跳转" class="headerlink" title="3.路由跳转"></a>3.路由跳转</h2><p><code>NavigationHelper.navigate.('路由名称')</code></p>
+<p><code>NavigationHelper.navigate.goBack()</code></p>
+<h2 id="4-Toast-使用"><a href="#4-Toast-使用" class="headerlink" title="4.Toast 使用"></a>4.Toast 使用</h2><h3 id="①：引入"><a href="#①：引入" class="headerlink" title="①：引入"></a>①：引入</h3><pre class="line-numbers language-none"><code class="language-none">import Toast from '../../components/common/Toast/Toast';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h3 id="②：使用教程https-gitee-com-robin-leung-teaset-blob-master-docs-cn-Toast-md-toasttoastview-props"><a href="#②：使用教程https-gitee-com-robin-leung-teaset-blob-master-docs-cn-Toast-md-toasttoastview-props" class="headerlink" title="②：使用教程https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props"></a>②：使用教程<a target="_blank" rel="noopener" href="https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props">https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props</a></h3><h2 id="5-实现-光标移开检查-光标汇聚-隐藏"><a href="#5-实现-光标移开检查-光标汇聚-隐藏" class="headerlink" title="5.实现 光标移开检查 光标汇聚 隐藏"></a>5.实现 光标移开检查 光标汇聚 隐藏</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">onFocus<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> phoneNumberErrShow<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">}</span>
+onBlur<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>
+                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> phoneNumberErrShow<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+                  <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="6-存储数据至本地"><a href="#6-存储数据至本地" class="headerlink" title="6.存储数据至本地"></a>6.存储数据至本地</h2><pre class="line-numbers language-none"><code class="language-none">//存储信息至本地
+        LocalStorageUtils.set('refreshToken', this.state.refreshToken);
+        LocalStorageUtils.set('accessToken', this.state.accessToken);
+        LocalStorageUtils.set('userId', this.state.userId);
+        LocalStorageUtils.set('name', this.state.name);
+        LocalStorageUtils.set('img', this.state.img);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<h2 id="7-mobox"><a href="#7-mobox" class="headerlink" title="7.mobox"></a>7.mobox</h2><pre class="line-numbers language-none"><code class="language-none">import { inject, observer } from 'mobx-react';
+import RootStore from '../../mobx/index';
 
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
+//此类前面
+
+@inject('RootStore')
+@observer
+
+
+//存储信息至mobox
+        RootStore.userStore.allData.accessToken = this.state.accessToken;
+        RootStore.userStore.allData.userId = this.state.userId;
+        RootStore.userStore.allData.refreshToken = this.state.refreshToken;
+        RootStore.userStore.allData.password = this.state.password;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
 
                 
             </div>
@@ -515,7 +539,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://sword-song456.github.io/2021/04/07/hello-world/">https://sword-song456.github.io/2021/04/07/hello-world/</a>
+                    <a href="https://sword-song456.github.io/2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/">https://sword-song456.github.io/2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -716,9 +740,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'https://sword-song456.github.io/2021/04/07/hello-world/';
-        this.page.identifier = '/2021/04/07/hello-world/';
-        this.page.title = 'Hello World';
+        this.page.url = 'https://sword-song456.github.io/2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/';
+        this.page.identifier = '/2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/';
+        this.page.title = '接口一：用户认证总结';
     };
     let disqus_shortname = '';
 
@@ -748,9 +772,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/">
                     <div class="card-image">
@@ -768,9 +793,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-07
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-user fa-fw"></i>
@@ -779,6 +804,7 @@
                         </span>
                     </div>
                 </div>
+
                 
             </div>
         </div>
@@ -786,7 +812,7 @@
         
         <div class="article col s12 m6" data-aos="fade-up">
             <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
                 <a href="/2021/04/07/hello-world/">
@@ -816,7 +842,6 @@
                         </span>
                     </div>
                 </div>
-
                 
             </div>
         </div>
