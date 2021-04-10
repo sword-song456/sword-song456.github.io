@@ -4,13 +4,25 @@
   
     
     <entry>
-      <title>接口一：用户认证总结</title>
-      <link href="2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/"/>
-      <url>2021/04/07/jie-kou-yi-yong-hu-ren-zheng-zong-jie/</url>
+      <title>hexo+github个人博客搭建教程</title>
+      <link href="2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/"/>
+      <url>2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/</url>
       
-        <content type="html"><![CDATA[<h1 id="接口一：用户认证总结"><a href="#接口一：用户认证总结" class="headerlink" title="接口一：用户认证总结"></a>接口一：用户认证总结</h1><h2 id="1-接口写法"><a href="#1-接口写法" class="headerlink" title="1.接口写法"></a>1.接口写法</h2><h3 id="①："><a href="#①：" class="headerlink" title="①："></a>①：</h3><h3 id="②："><a href="#②：" class="headerlink" title="②："></a>②：</h3><p><code>Http.test().then((res) =&gt; {}).catch()</code></p><p>相当于异步  await</p><h2 id="2-子组件父组件传值"><a href="#2-子组件父组件传值" class="headerlink" title="2.子组件父组件传值"></a>2.子组件父组件传值</h2><h3 id="父组件中-："><a href="#父组件中-：" class="headerlink" title="父组件中 ："></a>父组件中 ：</h3><p>对于子组件增加函数</p><h3 id="子组件中："><a href="#子组件中：" class="headerlink" title="子组件中："></a>子组件中：</h3><p>this.props.函数名  传入参数</p><h2 id="3-路由跳转"><a href="#3-路由跳转" class="headerlink" title="3.路由跳转"></a>3.路由跳转</h2><p><code>NavigationHelper.navigate.('路由名称')</code></p><p><code>NavigationHelper.navigate.goBack()</code></p><h2 id="4-Toast-使用"><a href="#4-Toast-使用" class="headerlink" title="4.Toast 使用"></a>4.Toast 使用</h2><h3 id="①：引入"><a href="#①：引入" class="headerlink" title="①：引入"></a>①：引入</h3><pre class="line-numbers language-none"><code class="language-none">import Toast from '../../components/common/Toast/Toast';<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><h3 id="②：使用教程https-gitee-com-robin-leung-teaset-blob-master-docs-cn-Toast-md-toasttoastview-props"><a href="#②：使用教程https-gitee-com-robin-leung-teaset-blob-master-docs-cn-Toast-md-toasttoastview-props" class="headerlink" title="②：使用教程https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props"></a>②：使用教程<a href="https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props">https://gitee.com/robin-leung/teaset/blob/master/docs/cn/Toast.md#toasttoastview--props</a></h3><h2 id="5-实现-光标移开检查-光标汇聚-隐藏"><a href="#5-实现-光标移开检查-光标汇聚-隐藏" class="headerlink" title="5.实现 光标移开检查 光标汇聚 隐藏"></a>5.实现 光标移开检查 光标汇聚 隐藏</h2><pre class="line-numbers language-javascript" data-language="javascript"><code class="language-javascript">onFocus<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> phoneNumberErrShow<span class="token operator">:</span> <span class="token boolean">false</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                  <span class="token punctuation">}</span><span class="token punctuation">}</span>onBlur<span class="token operator">=</span><span class="token punctuation">{</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">=&gt;</span> <span class="token punctuation">{</span>                    <span class="token keyword">this</span><span class="token punctuation">.</span><span class="token function">setState</span><span class="token punctuation">(</span><span class="token punctuation">{</span> phoneNumberErrShow<span class="token operator">:</span> <span class="token boolean">true</span> <span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>                  <span class="token punctuation">}</span><span class="token punctuation">}</span><span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="6-存储数据至本地"><a href="#6-存储数据至本地" class="headerlink" title="6.存储数据至本地"></a>6.存储数据至本地</h2><pre class="line-numbers language-none"><code class="language-none">//存储信息至本地        LocalStorageUtils.set('refreshToken', this.state.refreshToken);        LocalStorageUtils.set('accessToken', this.state.accessToken);        LocalStorageUtils.set('userId', this.state.userId);        LocalStorageUtils.set('name', this.state.name);        LocalStorageUtils.set('img', this.state.img);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><h2 id="7-mobox"><a href="#7-mobox" class="headerlink" title="7.mobox"></a>7.mobox</h2><pre class="line-numbers language-none"><code class="language-none">import { inject, observer } from 'mobx-react';import RootStore from '../../mobx/index';//此类前面@inject('RootStore')@observer//存储信息至mobox        RootStore.userStore.allData.accessToken = this.state.accessToken;        RootStore.userStore.allData.userId = this.state.userId;        RootStore.userStore.allData.refreshToken = this.state.refreshToken;        RootStore.userStore.allData.password = this.state.password;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>]]></content>
+        <content type="html"><![CDATA[<h1 id="哈哈哈哈"><a href="#哈哈哈哈" class="headerlink" title="哈哈哈哈"></a>哈哈哈哈</h1>]]></content>
       
       
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
       
     </entry>
     
@@ -18,12 +30,18 @@
     
     <entry>
       <title>Hello World</title>
-      <link href="2021/04/07/hello-world/"/>
-      <url>2021/04/07/hello-world/</url>
+      <link href="2021/04/10/hello-world/"/>
+      <url>2021/04/10/hello-world/</url>
       
-        <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo new "My New Post"<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/writing.html">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo server<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/server.html">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo generate<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/generating.html">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><pre class="line-numbers language-bash" data-language="bash"><code class="language-bash">$ hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><p>我是白小剑，你可以叫我宋剑儿。<br>别为我为啥起这个名儿，<br>剑未配妥，出门已是江湖。<br>千帆过尽，归来仍是少年。</p><p>在这里，我会不定期的更新两个板块：</p><p>1、作为一个前端小白，力所能及给大家带来前端学习的知识总结，以及学习小技巧。</p><p>2、记录好玩，想把世界上的有趣都分享给大家。</p><p>感谢你的到来，以后的日子我们就做伴了！</p><p>最后<br>想<br>和你一样<br>忠于热爱</p><p>自我介绍一下 </p><p>巨蟹座 篮球 web前端 摄影 </p><p>沉迷于自我总结 </p><p>理想做一个够格的软件开发工程师</p><p>也在为打破阶级固化冲出一条出口</p>]]></content>
       
       
+      
+        <tags>
+            
+            <tag> 启航 </tag>
+            
+        </tags>
       
     </entry>
     
