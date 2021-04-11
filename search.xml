@@ -29,12 +29,18 @@
     
     
     <entry>
-      <title>Hello World</title>
-      <link href="2021/04/10/hello-world/"/>
-      <url>2021/04/10/hello-world/</url>
+      <title>个人简介</title>
+      <link href="2021/04/04/hello-world/"/>
+      <url>2021/04/04/hello-world/</url>
       
-        <content type="html"><![CDATA[<h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><p>我是白小剑，你可以叫我宋剑儿。<br>别为我为啥起这个名儿，<br>剑未配妥，出门已是江湖。<br>千帆过尽，归来仍是少年。</p><p>在这里，我会不定期的更新两个板块：</p><p>1、作为一个前端小白，力所能及给大家带来前端学习的知识总结，以及学习小技巧。</p><p>2、记录好玩，想把世界上的有趣都分享给大家。</p><p>感谢你的到来，以后的日子我们就做伴了！</p><p>最后<br>想<br>和你一样<br>忠于热爱</p><p>自我介绍一下 </p><p>巨蟹座 篮球 web前端 摄影 </p><p>沉迷于自我总结 </p><p>理想做一个够格的软件开发工程师</p><p>也在为打破阶级固化冲出一条出口</p>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><img src="https://i.loli.net/2021/04/11/T8c4On5CzArhuLX.png" alt="白小剑" style="zoom: 25%;"><p>我是白小剑，你可以叫我宋剑儿。</p><p>别为我为啥起这个名儿，</p><p>剑未配妥，出门已是江湖。</p><p>千帆过尽，归来仍是少年。</p><h4 id="在这里，我会不定期的更新两个板块："><a href="#在这里，我会不定期的更新两个板块：" class="headerlink" title="在这里，我会不定期的更新两个板块："></a>在这里，我会不定期的更新两个板块：</h4><h5 id="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"><a href="#1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。" class="headerlink" title="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"></a>1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。</h5><h5 id="2、记录好玩，想把世界上的有趣都分享给大家。"><a href="#2、记录好玩，想把世界上的有趣都分享给大家。" class="headerlink" title="2、记录好玩，想把世界上的有趣都分享给大家。"></a>2、记录好玩，想把世界上的有趣都分享给大家。</h5><p><img src="https://i.loli.net/2021/04/11/3FRzlMBZ4tnuhdQ.jpg"></p><h2 id="感谢你的到来，以后的日子我们就做伴了！"><a href="#感谢你的到来，以后的日子我们就做伴了！" class="headerlink" title="感谢你的到来，以后的日子我们就做伴了！"></a>感谢你的到来，以后的日子我们就做伴了！</h2>]]></content>
       
+      
+      <categories>
+          
+          <category> 个人简介 </category>
+          
+      </categories>
       
       
         <tags>
