@@ -457,14 +457,14 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-19
+                    2021-04-20
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    132
+                    392
                 </div>
                 
 
@@ -489,7 +489,7 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hexo-github-gitee-个人博客搭建"><a href="#Hexo-github-gitee-个人博客搭建" class="headerlink" title="Hexo + github/gitee 个人博客搭建"></a>Hexo + github/gitee 个人博客搭建</h1><h2 id="一、知识储备"><a href="#一、知识储备" class="headerlink" title="一、知识储备"></a>一、知识储备</h2><h4 id="Hexo-官方文档"><a href="#Hexo-官方文档" class="headerlink" title="Hexo 官方文档"></a>Hexo <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a></h4><ul>
+                <h1 id="Hexo-github-gitee-个人博客搭建"><a href="#Hexo-github-gitee-个人博客搭建" class="headerlink" title="Hexo + github/gitee 个人博客搭建"></a>Hexo + github/gitee 个人博客搭建</h1><h2 id="一、知识储备"><a href="#一、知识储备" class="headerlink" title="一、知识储备"></a>一、知识储备</h2><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">Hexo</a></h3><ul>
 <li><p>快速 、简洁且高效的博客框架，使用Markdown , 解析文章</p>
 </li>
 <li><p>安装前提： node.js   Git   </p>
@@ -504,9 +504,66 @@
 ├── source			//存放资源文件夹 
 |   ├── _drafts
 |   └── _posts
-└── themes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+└── themes			//主题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
+<ul>
+<li><p>在 <code>_config.yml</code> 中修改大部分的配置。同理于themes中的_config.yml  <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/configuration">详情</a></p>
+</li>
+<li><p>常用命令</p>
+<pre class="line-numbers language-none"><code class="language-none">
+// 在文件夹中创建网站
+hexo init [folder]  
 
+// 新建一篇名为title 的博客 
+hexo new 'title'  // 简写=&gt;   hexo n 'title'
+
+// 生成静态文件
+hexo g 
+hexo g -d //生成立即部署网站
+
+// 清除缓存 (修改文件无法完成生成或生成无效)
+hexo clean
+
+//发表草稿
+hexo p
+
+// 启动本地服务器 (hexo框架对博客文件具有实时刷新的特性 ，因此 本地服务器常常用来查看效果)
+hexo s 
+
+//部署网站
+hexo d
+
+//渲染文件
+hexo render &lt;file1&gt; ...
+
+// 查看文件
+hexo list type
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<p><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210420145244764.png" alt="hexo_list"></p>
+</li>
+<li><p>其他内容详情请看 <a target="_blank" rel="noopener" href="https://hexo.io/zh-cn/docs/">官方文档</a></p>
+</li>
+</ul>
+<h3 id="gitee-github"><a href="#gitee-github" class="headerlink" title="gitee /  github"></a><a target="_blank" rel="noopener" href="https://gitee.com/">gitee</a> /  <a target="_blank" rel="noopener" href="https://github.com/">github</a></h3><ul>
+<li><p>相同点</p>
+<ul>
+<li>代码托管 协作开发的 软件项目托管平台</li>
+<li>开源软件仓库</li>
+<li>基于git</li>
+<li>支持静态网站服务 ⭐ </li>
+</ul>
+</li>
+<li><p>不同点</p>
+<ul>
+<li><p>gitee 访问稳定 速度快 ，github访问不稳定 ⭐</p>
+</li>
+<li><p>github 相比于 gitee 用户丰富， 开源软件丰富 ， 库多</p>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="二、教程"><a href="#二、教程" class="headerlink" title="二、教程"></a>二、教程</h2><h3 id="hexo-gitee-访问速度快，首选"><a href="#hexo-gitee-访问速度快，首选" class="headerlink" title="hexo+gitee (访问速度快，首选)"></a>hexo+gitee (访问速度快，首选)</h3>
                 
             </div>
             <hr/>
@@ -1092,7 +1149,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">264</span>&nbsp;字
+                class="white-color">528</span>&nbsp;字
             
             
             

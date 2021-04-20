@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>终身学习</title>
+      <link href="/sword__song__blog/2021/04/20/zhong-shen-xue-xi/"/>
+      <url>/sword__song__blog/2021/04/20/zhong-shen-xue-xi/</url>
+      
+        <content type="html"><![CDATA[<h1 id="《终身成长》"><a href="#《终身成长》" class="headerlink" title="《终身成长》"></a>《终身成长》</h1>]]></content>
+      
+      
+      
+        <tags>
+            
+            <tag> 读书 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title></title>
       <link href="/sword__song__blog/2021/04/19/on/"/>
       <url>/sword__song__blog/2021/04/19/on/</url>
@@ -52,7 +71,7 @@
       <link href="/sword__song__blog/2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/"/>
       <url>/sword__song__blog/2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/</url>
       
-        <content type="html"><![CDATA[<h1 id="Hexo-github-gitee-个人博客搭建"><a href="#Hexo-github-gitee-个人博客搭建" class="headerlink" title="Hexo + github/gitee 个人博客搭建"></a>Hexo + github/gitee 个人博客搭建</h1><h2 id="一、知识储备"><a href="#一、知识储备" class="headerlink" title="一、知识储备"></a>一、知识储备</h2><h4 id="Hexo-官方文档"><a href="#Hexo-官方文档" class="headerlink" title="Hexo 官方文档"></a>Hexo <a href="https://hexo.io/zh-cn/docs/">官方文档</a></h4><ul><li><p>快速 、简洁且高效的博客框架，使用Markdown , 解析文章</p></li><li><p>安装前提： node.js   Git   </p><p>可想而知 ，hexo博客搭建过程以及后续的博客更新是基于git分布式版本控制系统、node.js</p><p>安装教程请看官方文档  <a href="https://hexo.io/zh-cn/docs/">官方文档</a></p></li><li><p>文件目录</p><pre class="line-numbers language-none"><code class="language-none">.├── _config.yml       //网站配置信息 （常用）├── package.json     //应用程序信息├── scaffolds//模板文件夹├── source//存放资源文件夹 |   ├── _drafts|   └── _posts└── themes<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hexo-github-gitee-个人博客搭建"><a href="#Hexo-github-gitee-个人博客搭建" class="headerlink" title="Hexo + github/gitee 个人博客搭建"></a>Hexo + github/gitee 个人博客搭建</h1><h2 id="一、知识储备"><a href="#一、知识储备" class="headerlink" title="一、知识储备"></a>一、知识储备</h2><h3 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a><a href="https://hexo.io/zh-cn/docs/">Hexo</a></h3><ul><li><p>快速 、简洁且高效的博客框架，使用Markdown , 解析文章</p></li><li><p>安装前提： node.js   Git   </p><p>可想而知 ，hexo博客搭建过程以及后续的博客更新是基于git分布式版本控制系统、node.js</p><p>安装教程请看官方文档  <a href="https://hexo.io/zh-cn/docs/">官方文档</a></p></li><li><p>文件目录</p><pre class="line-numbers language-none"><code class="language-none">.├── _config.yml       //网站配置信息 （常用）├── package.json     //应用程序信息├── scaffolds//模板文件夹├── source//存放资源文件夹 |   ├── _drafts|   └── _posts└── themes//主题<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><ul><li><p>在 <code>_config.yml</code> 中修改大部分的配置。同理于themes中的_config.yml  <a href="https://hexo.io/zh-cn/docs/configuration">详情</a></p></li><li><p>常用命令</p><pre class="line-numbers language-none"><code class="language-none">// 在文件夹中创建网站hexo init [folder]  // 新建一篇名为title 的博客 hexo new 'title'  // 简写=&gt;   hexo n 'title'// 生成静态文件hexo g hexo g -d //生成立即部署网站// 清除缓存 (修改文件无法完成生成或生成无效)hexo clean//发表草稿hexo p// 启动本地服务器 (hexo框架对博客文件具有实时刷新的特性 ，因此 本地服务器常常用来查看效果)hexo s //部署网站hexo d//渲染文件hexo render &lt;file1&gt; ...// 查看文件hexo list type<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210420145244764.png" alt="hexo_list"></p></li><li><p>其他内容详情请看 <a href="https://hexo.io/zh-cn/docs/">官方文档</a></p></li></ul><h3 id="gitee-github"><a href="#gitee-github" class="headerlink" title="gitee /  github"></a><a href="https://gitee.com/">gitee</a> /  <a href="https://github.com/">github</a></h3><ul><li><p>相同点</p><ul><li>代码托管 协作开发的 软件项目托管平台</li><li>开源软件仓库</li><li>基于git</li><li>支持静态网站服务 ⭐ </li></ul></li><li><p>不同点</p><ul><li><p>gitee 访问稳定 速度快 ，github访问不稳定 ⭐</p></li><li><p>github 相比于 gitee 用户丰富， 开源软件丰富 ， 库多</p></li></ul></li></ul><h2 id="二、教程"><a href="#二、教程" class="headerlink" title="二、教程"></a>二、教程</h2><h3 id="hexo-gitee-访问速度快，首选"><a href="#hexo-gitee-访问速度快，首选" class="headerlink" title="hexo+gitee (访问速度快，首选)"></a>hexo+gitee (访问速度快，首选)</h3>]]></content>
       
       
       <categories>
@@ -77,7 +96,7 @@
       <link href="/sword__song__blog/2021/04/04/hello-world/"/>
       <url>/sword__song__blog/2021/04/04/hello-world/</url>
       
-        <content type="html"><![CDATA[<h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200421103440.png" alt="白小剑" style="zoom:25%;"><p>我是白小剑，你可以叫我宋剑儿。</p><p>别为我为啥起这个名儿，</p><p>剑未配妥，出门已是江湖。</p><p>千帆过尽，归来仍是少年。</p><h4 id="在这里，我会不定期的更新两个板块："><a href="#在这里，我会不定期的更新两个板块：" class="headerlink" title="在这里，我会不定期的更新两个板块："></a>在这里，我会不定期的更新两个板块：</h4><h5 id="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"><a href="#1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。" class="headerlink" title="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"></a>1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。</h5><h5 id="2、记录好玩，想把世界上的有趣都分享给大家。"><a href="#2、记录好玩，想把世界上的有趣都分享给大家。" class="headerlink" title="2、记录好玩，想把世界上的有趣都分享给大家。"></a>2、记录好玩，想把世界上的有趣都分享给大家。</h5><p><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/23.jpg" alt="23"></p><h2 id="感谢你的到来，以后的日子我们就做伴了！"><a href="#感谢你的到来，以后的日子我们就做伴了！" class="headerlink" title="感谢你的到来，以后的日子我们就做伴了！"></a>感谢你的到来，以后的日子我们就做伴了！</h2>]]></content>
+        <content type="html"><![CDATA[<h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200421103440.png" alt="白小剑" style="zoom:25%;"><p>我是白小剑，你可以叫我宋剑儿。</p><p>别为我为啥起这个名儿，</p><p>剑未配妥，出门已是江湖。</p><p>千帆过尽，归来仍是少年。</p><h4 id="在这里，我会不定期的更新两个板块："><a href="#在这里，我会不定期的更新两个板块：" class="headerlink" title="在这里，我会不定期的更新两个板块："></a>在这里，我会不定期的更新两个板块：</h4><h5 id="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"><a href="#1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。" class="headerlink" title="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"></a>1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。</h5><h5 id="2、记录好玩，想把世界上的有趣都分享给大家。"><a href="#2、记录好玩，想把世界上的有趣都分享给大家。" class="headerlink" title="2、记录好玩，想把世界上的有趣都分享给大家。"></a>2、记录好玩，想把世界上的有趣都分享给大家。</h5><p><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/23.jpg"></p><h2 id="感谢你的到来，以后的日子我们就做伴了！"><a href="#感谢你的到来，以后的日子我们就做伴了！" class="headerlink" title="感谢你的到来，以后的日子我们就做伴了！"></a>感谢你的到来，以后的日子我们就做伴了！</h2>]]></content>
       
       
       <categories>
