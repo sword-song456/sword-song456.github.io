@@ -6,7 +6,7 @@
   <link href="http://song-zejian.gitee.io/sword__song__blog/atom.xml" rel="self"/>
   
   <link href="http://song-zejian.gitee.io/sword__song__blog/"/>
-  <updated>2021-04-20T07:25:57.823Z</updated>
+  <updated>2021-04-20T07:28:29.833Z</updated>
   <id>http://song-zejian.gitee.io/sword__song__blog/</id>
   
   <author>
@@ -21,7 +21,7 @@
     <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/20/zhong-shen-xue-xi/"/>
     <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/20/zhong-shen-xue-xi/</id>
     <published>2021-04-20T07:24:02.000Z</published>
-    <updated>2021-04-20T07:25:57.823Z</updated>
+    <updated>2021-04-20T07:28:29.833Z</updated>
     
     
       
@@ -34,40 +34,10 @@
     
     
     
-    
-    <category term="读书" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/%E8%AF%BB%E4%B9%A6/"/>
-    
-  </entry>
-  
-  <entry>
-    <title></title>
-    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/19/on/"/>
-    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/19/on/</id>
-    <published>2021-04-19T02:30:31.000Z</published>
-    <updated>2021-04-19T02:31:05.873Z</updated>
+    <category term="读书" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E8%AF%BB%E4%B9%A6/"/>
     
     
-    
-    
-    <category term="hh" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/hh/"/>
-    
-    
-    <category term="come" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/come/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>hh</title>
-    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/19/hh/"/>
-    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/19/hh/</id>
-    <published>2021-04-19T02:28:05.000Z</published>
-    <updated>2021-04-19T02:29:33.088Z</updated>
-    
-    
-    
-    
-    
-    <category term="hh" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/hh/"/>
+    <category term="成长型思维" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/%E6%88%90%E9%95%BF%E5%9E%8B%E6%80%9D%E7%BB%B4/"/>
     
   </entry>
   
@@ -76,7 +46,7 @@
     <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/"/>
     <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/</id>
     <published>2021-04-10T05:12:15.000Z</published>
-    <updated>2021-04-20T07:21:10.732Z</updated>
+    <updated>2021-04-20T07:29:22.642Z</updated>
     
     
       
@@ -98,8 +68,8 @@
   
   <entry>
     <title>个人简介</title>
-    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/04/hello-world/"/>
-    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/04/hello-world/</id>
+    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/04/ni-hao/"/>
+    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/04/ni-hao/</id>
     <published>2021-04-03T16:00:00.000Z</published>
     <updated>2021-04-20T06:27:06.015Z</updated>
     
