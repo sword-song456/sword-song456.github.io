@@ -4,6 +4,25 @@
   
     
     <entry>
+      <title>JavaScript基本语法</title>
+      <link href="/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/"/>
+      <url>/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JavaScript-基本语法"><a href="#JavaScript-基本语法" class="headerlink" title="JavaScript 基本语法"></a>JavaScript 基本语法</h1><ul><li>语句和表达式的区别在于， 前者主要为了进行某种操作，一般情况下不需要返回值；后者则是为了得到返回值，一定会返回一个 值。</li><li>如果变量赋值的时候，忘了写 var 命令，这条语句也是有效的。 </li><li><ol><li>var a = 1; 2. // 基本等同 3. a = 1; </li><li>但是，不写 var 的做法，不利于表达意图，而且容易不知不觉地创建全局变量，所以建议总是使 用 var 命令声明变量。</li></ol></li></ul><ul><li><p>变量提升</p><p>JavaScript引擎的工作方式是，先解析代码，获取所有被声明的变量，然后再一行一行地运行。因此，所有变量的声明语句，都会提前到代码头部。因此叫变量提升</p><pre class="line-numbers language-none"><code class="language-none">console.log(a);var a;//实际上不会报错 因为变量提升<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>注释</p></li></ul><pre class="line-numbers language-none"><code class="language-none">// 单行注释多行注释/*  我是秦绿玺*/ &lt;!-- haha --&gt;  单行注释<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>条件语句</li></ul><pre class="line-numbers language-none"><code class="language-none">// if语句if (m === 3) {console.log(m)}// '===' 严格相等运算符  '==' 相等运算符<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li>严格相等与相等的区别</li></ul><p>相等运算符（ == ）比较两个值是否相等， 自动转化同类型</p><p>严格相等运算符（ === ）比较它 们是否为“同一个值”。 既要相等又得为同一个类型</p><ul><li>switch 语句</li></ul><pre class="line-numbers language-none"><code class="language-none">switch (fruit) {   case 'banana' :   banana();   break;   case 'apple'  :   apple();   break;   default:   console.log('啥也没有选上')   }<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><ul><li><p>三元运算符</p><pre class="line-numbers language-none"><code class="language-none">(条件) ? 表达式1 : 表达式2var mag = '数字' + n + '是' + (n % 2 === 0 ? '偶数' : '奇数')<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li><li><p>标签 ( label ) 相当于定位符，用于跳转到程序的任意位置</p><pre class="line-numbers language-none"><code class="language-none"> top: for (var i = 0; i &lt; 3; i++){ for (var j = 0; j &lt; 3; j++){ if (i === 1 &amp;&amp; j === 1) break top; console.log('i=' + i + ', j=' + j); } }// 直接跳出双层循环<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> JavaScript </category>
+          
+      </categories>
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>终身学习</title>
       <link href="/sword__song__blog/2021/04/20/zhong-shen-xue-xi/"/>
       <url>/sword__song__blog/2021/04/20/zhong-shen-xue-xi/</url>
