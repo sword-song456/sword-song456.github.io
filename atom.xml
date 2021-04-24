@@ -6,7 +6,7 @@
   <link href="http://song-zejian.gitee.io/sword__song__blog/atom.xml" rel="self"/>
   
   <link href="http://song-zejian.gitee.io/sword__song__blog/"/>
-  <updated>2021-04-24T03:53:56.777Z</updated>
+  <updated>2021-04-24T04:01:34.322Z</updated>
   <id>http://song-zejian.gitee.io/sword__song__blog/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>CSS动画基础</title>
+    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/"/>
+    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/</id>
+    <published>2021-04-24T04:00:30.000Z</published>
+    <updated>2021-04-24T04:01:34.322Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;demo-1&quot;&gt;
+        &lt;div class=&quot;circle&quot;&gt;
+            &lt;div class=&quot;word&quot;&gt;&lt;p&gt;简 单 动 画&lt;/p&gt;&lt;/div&gt;
+        &lt;/div&gt;
+   </summary>
+        
+      
+    
+    
+    
+    <category term="基础笔记" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="css" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/css/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript变量理解</title>

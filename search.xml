@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>CSS动画基础</title>
+      <link href="/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/"/>
+      <url>/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/</url>
+      
+        <content type="html"><![CDATA[<p></p><div class="demo-1">        <div class="circle">            <div class="word"><p>简 单 动 画</p></div>        </div>    </div><style>.demo-1 .circle {  width: 200px;  height: 200px;  background: #FFFF99;  margin: 0 auto;  border-radius: 50%;  position: relative;  animation: jump 1.5s cubic-bezier(0.41, -0.04, 0.93, 0.29)  infinite alternate;}@keyframes jump {  0% {    transform: translateX(0px);  }  40% {    transform: translateX(150px);    clip-path: ellipse(50% 50% at 50% 50%);  }  50% {    transform: translateX(150px);    clip-path: ellipse(46% 50% at 46% 50%);  }  90% {    transform: translateX(0px);    clip-path: ellipse(50% 50% at 50% 50%);  }  100% {    transform: translateX(0px);    clip-path: ellipse(80% 50% at 80% 50%);  }}.demo-1 .circle .word {  position: absolute;  top: 50%;  left: 50%;  transform: translate(-50%, -50%);  background: #CC9999;  border-radius: 30%;  height:30px;}.demo-1 .circle .word p {  color: #666699;}</style><div id="catalog">索引</div><style>#catalog{            color: #1CA28A;            font-size: 30px;            font-weight: bold;            width: 60px;            height: 40px;            animation: bigger 2s ease-in 0.5s  infinite alternate;            font-family:"微软雅黑","黑体","宋体";        margin-left：50px;        }         @keyframes bigger {            0%{                transform:scale(0.7);            }            50%{                transform:scale(0.9);            }            100%{                transform:scale(1.2);            }        }</style><style>        #side-menu {            list-style: none;            border: 3px solid #1CA28A    ;            border-radius: 10px;            width: 300px;            padding: 20px;            background: #88AE5C;        margin:0 auto;        margin-bottom: 50px;        }        #side-menu li {            font-size: 18px;            line-height: 2.4em;            border-bottom: dotted 1px grey ;            /* 添加分隔符 */        }        #side-menu span{            font-weight: bolder;            color: khaki;        }         #side-menu li:last-child {            border: none;            /* 取消最后一个分隔符 */        }        #side-menu li a {            color: #EFD735    ;            text-decoration: none;        }        #side-menu li a:hover {            color: rgb(255, 100, 200);        }</style><ul id="side-menu">    <li><a href="#download"><span>①</span> 介绍</a></li>    <li><a href="#unzip"><span>②</span> Transition 基础写法和经验</a></li>    <li><a href="#settings"><span>③</span> animation 写法和经验总结</a></li>    <li><a href="#compile"><span>④</span> 时间函数</a></li></ul><div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="download"><strong><span>①</span> 介绍</strong></div><ul><li>css3动画包括 <strong>transtion</strong> 和 <strong>animation</strong>   </li><li></li><li>动画常和<strong>transform属性</strong>常用</li><li></li><li>transform并不是动画属性</li></ul><div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="unzip"><strong><span>②</span> Transition 基础写法和经验</strong></div><p><strong>过渡</strong></p><p><strong>基础写法</strong>  ：  属性名称   过渡时间   时间函数   延迟时间    （顺序 书写规范）</p><p><strong>用法注意</strong>： </p><ul><li>①属性有变化的时候才会过渡   </li><li>②初始化后再应用   </li><li>③时间函数改变动画速度</li></ul><p>tip： </p><ul><li>1.display 不能和transition一起使用  （文档流限制）</li><li></li><li>2.transition 尽量不用all</li><li></li><li>3.常见的闪动   我们可以  perspective  和 backface-visibility</li><li></li><li>4.详见时间函数 <a href="https://blog.csdn.net/zhy13087344578/article/details/79651857">时间函数</a></li></ul><p><strong>拓展：</strong></p><p><strong>transform属性</strong>：<a href="https://www.w3school.com.cn/cssref/pr_transform.asp">教程</a></p><p>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行<strong>旋转、缩放、移动或倾斜</strong>。</p><p>常见属性</p><ul><li><strong>translate</strong>  translateX translateY   x轴 y轴 定向移动    单位：百分比或者px</li><li></li><li><strong>scaleX（x，y）</strong>  缩放比例  填倍数</li><li></li><li><strong>rotate(<em>angle</em>)</strong>   旋转角度   rotate(60deg)</li><li></li><li><strong>skew（angle）</strong>  倾斜角度</li></ul><div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="settings"><strong><span>③</span> animation 写法和经验总结</strong></div><p><strong>组建动画</strong></p><p><strong>基础写法</strong>：<a href="https://www.w3school.com.cn/cssref/pr_animation.asp">教程</a></p><p> 动画名称（name）–@keyframe    过渡时间     时间函数   延迟时间</p><p>播放次数   播放方向   停止播放   是否暂停</p><p>tip：</p><ul><li>1.animation 解决了transtion display：none  的BUG   （手动添加）</li><li></li><li>2.可实现跳动  根据百分比切换</li></ul><div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="compile"><strong><span>④</span> 时间函数</strong></div><ul><li><a href="https://blog.csdn.net/zhy13087344578/article/details/79651857">时间函数</a></li><li></li><li>线性 ：cubic-bezier  实现动画的线性过渡</li><li></li><li>非线性：steps （1，start|end）  实现动画的阶跃变化</li></ul><p><strong>简单应用：</strong></p><p>loading：<br><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/f22d4de2-0638-47c1-8d21-4e4beacb6e12.png" alt="image.png"></p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> css </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>JavaScript变量理解</title>
       <link href="/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/"/>
       <url>/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/</url>
