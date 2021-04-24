@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="个人简介, Blog-Sword">
+    <meta name="keywords" content="JavaScript变量理解, Blog-Sword">
     <meta name="description" content="我是白小剑">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>个人简介 | Blog-Sword</title>
+    <title>JavaScript变量理解 | Blog-Sword</title>
     <link rel="icon" type="image/png" href="/sword__song__blog/medias/logo2.png">
 
     <link rel="stylesheet" type="text/css" href="/sword__song__blog/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/sword__song__blog/medias/featureimages/1.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/sword__song__blog/medias/featureimages/0.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">个人简介</h1>
+                    <h1 class="description center-align post-title">JavaScript变量理解</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +425,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/sword__song__blog/tags/%E5%90%AF%E8%88%AA/">
-                                <span class="chip bg-color">启航</span>
+                            <a href="/sword__song__blog/tags/JavaScript/">
+                                <span class="chip bg-color">-JavaScript</span>
                             </a>
                         
                     </div>
@@ -437,8 +437,8 @@
                     <div class="post-cate">
                         <i class="fas fa-bookmark fa-fw icon-category"></i>
                         
-                            <a href="/sword__song__blog/categories/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" class="post-category">
-                                个人简介
+                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
+                                基础笔记
                             </a>
                         
                     </div>
@@ -450,21 +450,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-04
+                    2021-04-24
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-20
+                    2021-04-24
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    132
+                    312
                 </div>
                 
 
@@ -489,14 +489,64 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="Hi-，你好呀"><a href="#Hi-，你好呀" class="headerlink" title="Hi ，你好呀"></a>Hi ，你好呀</h1><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20200421103440.png" alt="白小剑" style="zoom:25%;">
+                <h1 id="JavaScript变量理解"><a href="#JavaScript变量理解" class="headerlink" title="JavaScript变量理解"></a>JavaScript变量理解</h1><p><strong>var&amp;&amp;let&amp;&amp;const</strong></p>
+<p>ECMAScript变量是<strong>松散类型</strong>的，也就意味这，变量可以保存任何类型的数据。每个变量只不过是一个用于<strong>保存任意值的命名占位符</strong></p>
+<hr>
+<h3 id="var"><a href="#var" class="headerlink" title="var"></a>var</h3><ul>
+<li><p>声明作用域为函数</p>
+  <pre class="line-numbers language-none"><code class="language-none">function hh(){
+	var a = 'hh'
+}
+hh();
+console.log(a);   // 错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>var 声明提升</p>
+<p>  所谓提升，就是将声明拉到函数作用域的顶部 （只拉声明 ，不拉赋值）</p>
+  <pre class="line-numbers language-none"><code class="language-none">function com(){
+	console.log(a);
+	var a = 'hh'
+}
+com()   // undefined 并未出现报错
 
-<p>我是白小剑，你可以叫我宋剑儿。</p>
-<p>别为我为啥起这个名儿，</p>
-<p>剑未配妥，出门已是江湖。</p>
-<p>千帆过尽，归来仍是少年。</p>
-<h4 id="在这里，我会不定期的更新两个板块："><a href="#在这里，我会不定期的更新两个板块：" class="headerlink" title="在这里，我会不定期的更新两个板块："></a>在这里，我会不定期的更新两个板块：</h4><h5 id="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"><a href="#1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。" class="headerlink" title="1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。"></a>1、作为一个编程小白，力所能及给大家带来学习编程的知识总结，以及学习小技巧。</h5><h5 id="2、记录好玩，想把世界上的有趣都分享给大家。"><a href="#2、记录好玩，想把世界上的有趣都分享给大家。" class="headerlink" title="2、记录好玩，想把世界上的有趣都分享给大家。"></a>2、记录好玩，想把世界上的有趣都分享给大家。</h5><p><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/23.jpg"></p>
-<h2 id="感谢你的到来，以后的日子我们就做伴了！"><a href="#感谢你的到来，以后的日子我们就做伴了！" class="headerlink" title="感谢你的到来，以后的日子我们就做伴了！"></a>感谢你的到来，以后的日子我们就做伴了！</h2>
+// 上述代码等于
+
+function com(){
+	var a;
+	console.log(a);
+	a = 'hh';
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
+<li><p>块作用域  块 ===》 <code>{}</code></p>
+  <pre class="line-numbers language-none"><code class="language-none">if(true) {
+	let age = 26;
+	console.log(age);  // 26
+}
+console,log(age);    // ReferenceError:26未定义<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>声明不会被提升</p>
+</li>
+<li><p>可全局声明 ，但不会成为window对象的属性（var）</p>
+</li>
+<li><p>不允许重复声明</p>
+</li>
+</ul>
+<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
+<li><p>与let相似 唯一一个重要的区别是<strong>声明变量时必须要初始化，且不允许修改</strong></p>
+  <pre class="line-numbers language-none"><code class="language-none">const a ;  // 错误
+cosnt a = 5 ; 
+
+// const 也不允许重复声明
+const name = '白小剑'
+const name = '秦始皇' // SyntaxError
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+</ul>
+<h3 id="生命风格以及最佳实践"><a href="#生命风格以及最佳实践" class="headerlink" title="生命风格以及最佳实践"></a>生命风格以及最佳实践</h3><ul>
+<li><p>不使用 <strong>var</strong></p>
+</li>
+<li><p><strong>const</strong> 优先 <strong>let</strong> 次之</p>
+<p>  使用<strong>const</strong> 可以使浏览器强制保持变量不变 ， 只在提前知道变量会修改时使用<strong>let</strong>来声明</p>
+</li>
+</ul>
+
                 
             </div>
             <hr/>
@@ -522,7 +572,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/04/ni-hao/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/04/ni-hao/</a>
+                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -560,8 +610,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/sword__song__blog/tags/%E5%90%AF%E8%88%AA/">
-                                    <span class="chip bg-color">启航</span>
+                                <a href="/sword__song__blog/tags/JavaScript/">
+                                    <span class="chip bg-color">-JavaScript</span>
                                 </a>
                             
                         </div>
@@ -727,9 +777,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/04/ni-hao/';
-        this.page.identifier = '/sword__song__blog/2021/04/04/ni-hao/';
-        this.page.title = '个人简介';
+        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/';
+        this.page.identifier = '/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/';
+        this.page.title = 'JavaScript变量理解';
     };
     let disqus_shortname = '';
 
@@ -759,87 +809,36 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
-                <a href="/sword__song__blog/2021/04/10/hexo-github-ge-ren-bo-ke-da-jian-jiao-cheng/">
+                <a href="/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/">
                     <div class="card-image">
                         
                         
-                        <img src="/sword__song__blog/medias/featureimages/4.jpg" class="responsive-img" alt="hexo+github个人博客搭建教程">
+                        <img src="/sword__song__blog/medias/featureimages/0.jpg" class="responsive-img" alt="JavaScript变量理解">
                         
-                        <span class="card-title">hexo+github个人博客搭建教程</span>
+                        <span class="card-title">JavaScript变量理解</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
                     <div class="summary block-with-text">
                         
-                            个人博客从何而来
-                        
-                    </div>
-                    <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-10
-                        </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/sword__song__blog/categories/%E6%95%99%E7%A8%8B/" class="post-category">
-                                    教程
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/sword__song__blog/tags/hexo/">
-                        <span class="chip bg-color">hexo</span>
-                    </a>
-                    
-                    <a href="/sword__song__blog/tags/git/">
-                        <span class="chip bg-color">git</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                本篇&nbsp;<i class="far fa-dot-circle"></i>
-            </div>
-            <div class="card">
-                <a href="/sword__song__blog/2021/04/04/ni-hao/">
-                    <div class="card-image">
-                        
-                        <img src="/sword__song__blog/medias/featureimages/1.jpg" class="responsive-img" alt="个人简介">
-                        
-                        <span class="card-title">个人简介</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            我是白小剑，你可以叫我宋剑儿。
+                            基础不牢，地动山摇
                         
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-04
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
                             </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/sword__song__blog/categories/%E4%B8%AA%E4%BA%BA%E7%AE%80%E4%BB%8B/" class="post-category">
-                                    个人简介
+                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    基础笔记
                                 </a>
                             
                             
@@ -850,8 +849,57 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/sword__song__blog/tags/%E5%90%AF%E8%88%AA/">
-                        <span class="chip bg-color">启航</span>
+                    <a href="/sword__song__blog/tags/JavaScript/">
+                        <span class="chip bg-color">-JavaScript</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
+            <div class="card">
+                <a href="/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/sword__song__blog/medias/featureimages/1.jpg" class="responsive-img" alt="JavaScript基本语法">
+                        
+                        <span class="card-title">JavaScript基本语法</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            你所不知道的JavaScript
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    基础笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/sword__song__blog/tags/JavaScript/">
+                        <span class="chip bg-color">-JavaScript</span>
                     </a>
                     
                 </div>

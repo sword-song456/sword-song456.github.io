@@ -6,7 +6,7 @@
   <link href="http://song-zejian.gitee.io/sword__song__blog/atom.xml" rel="self"/>
   
   <link href="http://song-zejian.gitee.io/sword__song__blog/"/>
-  <updated>2021-04-21T09:01:12.322Z</updated>
+  <updated>2021-04-24T03:51:13.405Z</updated>
   <id>http://song-zejian.gitee.io/sword__song__blog/</id>
   
   <author>
@@ -17,11 +17,36 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>JavaScript变量理解</title>
+    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/"/>
+    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/</id>
+    <published>2021-04-24T03:45:02.000Z</published>
+    <updated>2021-04-24T03:51:13.405Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript变量理解&quot;&gt;&lt;a href=&quot;#JavaScript变量理解&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="基础笔记" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="-JavaScript" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/JavaScript/"/>
+    
+  </entry>
+  
+  <entry>
     <title>JavaScript基本语法</title>
     <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/"/>
     <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/</id>
     <published>2021-04-21T08:59:21.000Z</published>
-    <updated>2021-04-21T09:01:12.322Z</updated>
+    <updated>2021-04-24T03:51:27.268Z</updated>
     
     
       
@@ -34,8 +59,10 @@
     
     
     
-    <category term="JavaScript" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/JavaScript/"/>
+    <category term="基础笔记" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
     
+    
+    <category term="-JavaScript" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/JavaScript/"/>
     
   </entry>
   
