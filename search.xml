@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>ES6模板字面量</title>
+      <link href="/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/"/>
+      <url>/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/</url>
+      
+        <content type="html"><![CDATA[<h1 id="ES6-模板字面量"><a href="#ES6-模板字面量" class="headerlink" title="ES6 模板字面量"></a>ES6 模板字面量</h1><h3 id="1-基本含义"><a href="#1-基本含义" class="headerlink" title="1. 基本含义"></a>1. 基本含义</h3><ul><li><p>保留换行字符，跨行定义字符串</p>  <pre class="line-numbers language-none"><code class="language-none">let hh = '我是\n宋泽剑'let hh =  `我是宋泽剑 `/*我是宋泽剑*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>保持反引号内部的空格</p>  <pre class="line-numbers language-none"><code class="language-none">let hh =  `我是宋泽剑 `console.log(hh.length)   //47<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul><h3 id="2-支持字符串插值"><a href="#2-支持字符串插值" class="headerlink" title="2.支持字符串插值"></a>2.支持字符串插值</h3><ul><li><p>插值表达式：<code>${}</code> </p></li><li><p>可以放变量，还可以进行运算</p>  <pre class="line-numbers language-none"><code class="language-none">let value = 5let exponet = 'second'let hh = `${value} to the ${exponet} power is ${value * value}`;// 5 to the second power is 25  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>可以插入函数和方法</p>  <pre class="line-numbers language-none"><code class="language-none">function hh(word){return`${word[0].toUpperCase}${word.slice(1)}`}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li></ul><h3 id="3-模板自面量标签函数"><a href="#3-模板自面量标签函数" class="headerlink" title="3. 模板自面量标签函数"></a>3. 模板自面量标签函数</h3><ul><li><p>标签函数会接受被插值记号分隔后的模板和表达式求值的结果</p>  <pre class="line-numbers language-none"><code class="language-none">function simpleTag(strings, aValExpression, bValExpression, sumExpression) {  console.log(strings);  console.log(aValExpression);  console.log(bValExpression);  console.log(sumExpression);  return 'foobar'; } let a = 6;let b = 9;let hh = simpleTag`${a} + ${b} = ${a+b}`// strings ==&gt; ""," + "," + = ","" 分隔后的模板// 6// 9// 15<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul><h3 id="4-原始字符串"><a href="#4-原始字符串" class="headerlink" title="4.原始字符串"></a>4.原始字符串</h3><ul><li><p>获取原始内容</p>  <pre class="line-numbers language-none"><code class="language-none">console.log(`\u00A9`)   //© <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li><li><p>String.raw  字母含义</p>  <pre class="line-numbers language-none"><code class="language-none">console.log(String.raw`\u00A9`)// \u00A9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> ES6 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>CSS动画基础</title>
       <link href="/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/"/>
       <url>/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/</url>

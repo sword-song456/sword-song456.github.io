@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="JavaScript变量理解, Blog-Sword">
+    <meta name="keywords" content="ES6模板字面量, Blog-Sword">
     <meta name="description" content="我是白小剑">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>JavaScript变量理解 | Blog-Sword</title>
+    <title>ES6模板字面量 | Blog-Sword</title>
     <link rel="icon" type="image/png" href="/sword__song__blog/medias/logo2.png">
 
     <link rel="stylesheet" type="text/css" href="/sword__song__blog/libs/awesome/css/all.css">
@@ -309,7 +309,7 @@
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">JavaScript变量理解</h1>
+                    <h1 class="description center-align post-title">ES6模板字面量</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +425,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/sword__song__blog/tags/JavaScript/">
-                                <span class="chip bg-color">JavaScript</span>
+                            <a href="/sword__song__blog/tags/ES6/">
+                                <span class="chip bg-color">ES6</span>
                             </a>
                         
                     </div>
@@ -450,21 +450,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-25
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-26
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    312
+                    241
                 </div>
                 
 
@@ -489,61 +489,65 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <h1 id="JavaScript变量理解"><a href="#JavaScript变量理解" class="headerlink" title="JavaScript变量理解"></a>JavaScript变量理解</h1><p><strong>var&amp;&amp;let&amp;&amp;const</strong></p>
-<p>ECMAScript变量是<strong>松散类型</strong>的，也就意味这，变量可以保存任何类型的数据。每个变量只不过是一个用于<strong>保存任意值的命名占位符</strong></p>
-<hr>
-<h3 id="var"><a href="#var" class="headerlink" title="var"></a>var</h3><ul>
-<li><p>声明作用域为函数</p>
-  <pre class="line-numbers language-none"><code class="language-none">function hh(){
-	var a = 'hh'
-}
-hh();
-console.log(a);   // 错误<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>var 声明提升</p>
-<p>  所谓提升，就是将声明拉到函数作用域的顶部 （只拉声明 ，不拉赋值）</p>
-  <pre class="line-numbers language-none"><code class="language-none">function com(){
-	console.log(a);
-	var a = 'hh'
-}
-com()   // undefined 并未出现报错
+                <h1 id="ES6-模板字面量"><a href="#ES6-模板字面量" class="headerlink" title="ES6 模板字面量"></a>ES6 模板字面量</h1><h3 id="1-基本含义"><a href="#1-基本含义" class="headerlink" title="1. 基本含义"></a>1. 基本含义</h3><ul>
+<li><p>保留换行字符，跨行定义字符串</p>
+  <pre class="line-numbers language-none"><code class="language-none">let hh = '我是\n宋泽剑'
 
-// 上述代码等于
+let hh =  `我是
+宋泽剑 `
 
-function com(){
-	var a;
-	console.log(a);
-	a = 'hh';
-}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+/*
+我是
+宋泽剑
+*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>保持反引号内部的空格</p>
+  <pre class="line-numbers language-none"><code class="language-none">let hh =  `我是
+			宋泽剑 `
+console.log(hh.length)   //47<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h3 id="let"><a href="#let" class="headerlink" title="let"></a>let</h3><ul>
-<li><p>块作用域  块 ===》 <code>{}</code></p>
-  <pre class="line-numbers language-none"><code class="language-none">if(true) {
-	let age = 26;
-	console.log(age);  // 26
-}
-console,log(age);    // ReferenceError:26未定义<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
-<li><p>声明不会被提升</p>
+<h3 id="2-支持字符串插值"><a href="#2-支持字符串插值" class="headerlink" title="2.支持字符串插值"></a>2.支持字符串插值</h3><ul>
+<li><p>插值表达式：<code>${}</code> </p>
 </li>
-<li><p>可全局声明 ，但不会成为window对象的属性（var）</p>
-</li>
-<li><p>不允许重复声明</p>
+<li><p>可以放变量，还可以进行运算</p>
+  <pre class="line-numbers language-none"><code class="language-none">let value = 5
+
+let exponet = 'second'
+
+let hh = `${value} to the ${exponet} power is ${value * value}`;
+
+// 5 to the second power is 25  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>可以插入函数和方法</p>
+  <pre class="line-numbers language-none"><code class="language-none">function hh(word){
+	return`${word[0].toUpperCase}${word.slice(1)}`
+}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
+
 </li>
 </ul>
-<h3 id="const"><a href="#const" class="headerlink" title="const"></a>const</h3><ul>
-<li><p>与let相似 唯一一个重要的区别是<strong>声明变量时必须要初始化，且不允许修改</strong></p>
-  <pre class="line-numbers language-none"><code class="language-none">const a ;  // 错误
-cosnt a = 5 ; 
-
-// const 也不允许重复声明
-const name = '白小剑'
-const name = '秦始皇' // SyntaxError
-<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<h3 id="3-模板自面量标签函数"><a href="#3-模板自面量标签函数" class="headerlink" title="3. 模板自面量标签函数"></a>3. 模板自面量标签函数</h3><ul>
+<li><p>标签函数会接受被插值记号分隔后的模板和表达式求值的结果</p>
+  <pre class="line-numbers language-none"><code class="language-none">function simpleTag(strings, aValExpression, bValExpression, sumExpression) { 
+ console.log(strings); 
+ console.log(aValExpression); 
+ console.log(bValExpression); 
+ console.log(sumExpression); 
+ return 'foobar'; 
+} 
+let a = 6;
+let b = 9;
+let hh = simpleTag`${a} + ${b} = ${a+b}`
+// strings ==&gt; ""," + "," + = ","" 分隔后的模板
+// 6
+// 9
+// 15<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
 </ul>
-<h3 id="生命风格以及最佳实践"><a href="#生命风格以及最佳实践" class="headerlink" title="生命风格以及最佳实践"></a>生命风格以及最佳实践</h3><ul>
-<li><p>不使用 <strong>var</strong></p>
-</li>
-<li><p><strong>const</strong> 优先 <strong>let</strong> 次之</p>
-<p>  使用<strong>const</strong> 可以使浏览器强制保持变量不变 ， 只在提前知道变量会修改时使用<strong>let</strong>来声明</p>
+<h3 id="4-原始字符串"><a href="#4-原始字符串" class="headerlink" title="4.原始字符串"></a>4.原始字符串</h3><ul>
+<li><p>获取原始内容</p>
+  <pre class="line-numbers language-none"><code class="language-none">console.log(`\u00A9`)   
+//© <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre></li>
+<li><p>String.raw  字母含义</p>
+  <pre class="line-numbers language-none"><code class="language-none">console.log(String.raw`\u00A9`)
+// \u00A9<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
 </li>
 </ul>
 
@@ -572,7 +576,7 @@ const name = '秦始皇' // SyntaxError
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/</a>
+                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -610,8 +614,8 @@ const name = '秦始皇' // SyntaxError
                     
                         <div class="article-tag">
                             
-                                <a href="/sword__song__blog/tags/JavaScript/">
-                                    <span class="chip bg-color">JavaScript</span>
+                                <a href="/sword__song__blog/tags/ES6/">
+                                    <span class="chip bg-color">ES6</span>
                                 </a>
                             
                         </div>
@@ -777,9 +781,9 @@ const name = '秦始皇' // SyntaxError
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/';
-        this.page.identifier = '/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/';
-        this.page.title = 'JavaScript变量理解';
+        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/';
+        this.page.identifier = '/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/';
+        this.page.title = 'ES6模板字面量';
     };
     let disqus_shortname = '';
 
@@ -809,9 +813,60 @@ const name = '秦始皇' // SyntaxError
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/sword__song__blog/medias/featureimages/0.jpg" class="responsive-img" alt="ES6模板字面量">
+                        
+                        <span class="card-title">ES6模板字面量</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ES6语法
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    基础笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/sword__song__blog/tags/ES6/">
+                        <span class="chip bg-color">ES6</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/">
                     <div class="card-image">
@@ -829,9 +884,9 @@ const name = '秦始皇' // SyntaxError
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -849,55 +904,6 @@ const name = '秦始皇' // SyntaxError
                     
                     <a href="/sword__song__blog/tags/css/">
                         <span class="chip bg-color">css</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/sword__song__blog/2021/04/21/javascript-ji-ben-yu-fa/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/sword__song__blog/medias/featureimages/1.jpg" class="responsive-img" alt="JavaScript基本语法">
-                        
-                        <span class="card-title">JavaScript基本语法</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            你所不知道的JavaScript
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-21
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    基础笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/sword__song__blog/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
