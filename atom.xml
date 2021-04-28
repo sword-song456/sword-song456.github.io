@@ -6,7 +6,7 @@
   <link href="http://song-zejian.gitee.io/sword__song__blog/atom.xml" rel="self"/>
   
   <link href="http://song-zejian.gitee.io/sword__song__blog/"/>
-  <updated>2021-04-26T14:18:35.583Z</updated>
+  <updated>2021-04-28T01:36:05.079Z</updated>
   <id>http://song-zejian.gitee.io/sword__song__blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>ES6 symbol对象</title>
+    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/04/27/symbol-dui-xiang/"/>
+    <id>http://song-zejian.gitee.io/sword__song__blog/2021/04/27/symbol-dui-xiang/</id>
+    <published>2021-04-27T06:29:14.000Z</published>
+    <updated>2021-04-28T01:36:05.079Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;Symbol（符号）-类型&quot;&gt;&lt;a href=&quot;#Symbol（符号）-类型&quot; class=&quot;headerlink&quot; title=&quot;Symbol（符号） 类型&quot;&gt;&lt;/a&gt;Symbol（符号） 类型&lt;/h1&gt;&lt;h3 id=&quot;1-使用场景&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="基础笔记" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="ES6 JavaScript" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/ES6-JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>ES6模板字面量</title>

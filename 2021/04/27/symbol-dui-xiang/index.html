@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="CSS动画基础, Blog-Sword">
+    <meta name="keywords" content="ES6 symbol对象, Blog-Sword">
     <meta name="description" content="我是白小剑">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -16,7 +16,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>CSS动画基础 | Blog-Sword</title>
+    <title>ES6 symbol对象 | Blog-Sword</title>
     <link rel="icon" type="image/png" href="/sword__song__blog/medias/logo2.png">
 
     <link rel="stylesheet" type="text/css" href="/sword__song__blog/libs/awesome/css/all.css">
@@ -304,12 +304,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/sword__song__blog/medias/featureimages/4.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/sword__song__blog/medias/featureimages/3.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">CSS动画基础</h1>
+                    <h1 class="description center-align post-title">ES6 symbol对象</h1>
                 </div>
             </div>
         </div>
@@ -425,8 +425,8 @@
                     
                     <div class="article-tag">
                         
-                            <a href="/sword__song__blog/tags/css/">
-                                <span class="chip bg-color">css</span>
+                            <a href="/sword__song__blog/tags/ES6-JavaScript/">
+                                <span class="chip bg-color">ES6 JavaScript</span>
                             </a>
                         
                     </div>
@@ -450,21 +450,21 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-27
                 </div>
                 
 
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-check fa-fw"></i>更新日期:&nbsp;&nbsp;
-                    2021-04-24
+                    2021-04-28
                 </div>
                 
 
                 
                 <div class="info-break-policy">
                     <i class="far fa-file-word fa-fw"></i>文章字数:&nbsp;&nbsp;
-                    636
+                    245
                 </div>
                 
 
@@ -489,189 +489,70 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p></p>
-<div class="demo-1">
-        <div class="circle">
-            <div class="word"><p>简 单 动 画</p></div>
-        </div>
-    </div>
-<style>
-.demo-1 .circle {
-  width: 200px;
-  height: 200px;
-  background: #FFFF99;
-  margin: 0 auto;
-  border-radius: 50%;
-  position: relative;
-  animation: jump 1.5s cubic-bezier(0.41, -0.04, 0.93, 0.29)  infinite alternate;
+                <h1 id="Symbol（符号）-类型"><a href="#Symbol（符号）-类型" class="headerlink" title="Symbol（符号） 类型"></a>Symbol（符号） 类型</h1><h3 id="1-使用场景"><a href="#1-使用场景" class="headerlink" title="1. 使用场景"></a>1. 使用场景</h3><ul>
+<li>确保对象属性的使用的<strong>唯一标识符</strong></li>
+<li>创建唯一记号，用作非字符串形式的对象属性</li>
+</ul>
+<h3 id="2-声明定义方式"><a href="#2-声明定义方式" class="headerlink" title="2. 声明定义方式"></a>2. 声明定义方式</h3><ul>
+<li><p>常规</p>
+  <pre class="line-numbers language-none"><code class="language-none">    
+let hh = Symbol('你好');
+let edu = Symbol('你好');
+// ‘’ 里面写描述
+console.log(hh == edu)
+console.log(hh)
+console.log(hh.description) // 输出描述
+/*
+false
+Symbol(你好)
+你好
+*/<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>symbol.for 定义全局注册表,并记录在内存中（运行时的不同部分需要共享和重用符号实例）</p>
+  <pre class="line-numbers language-none"><code class="language-none">let com = Symbol.for('hh')
+    let mmm = Symbol.for('hh')
+    console.log(com == mmm)
+    /*
+    true
+    */<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li>
+<li><p>symbol.keyFor()查询<strong>全局注册表</strong></p>
+  <pre class="line-numbers language-none"><code class="language-none">\\ 全局
+let s = symbol.for('hh')
+symbol.keyFor(s)  // hh
+
+\\ 普通
+let s = symbol('hh')
+symbol.keyFor(s)  // undefined<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+</li>
+</ul>
+<h3 id="3-解决字符串耦合问题"><a href="#3-解决字符串耦合问题" class="headerlink" title="3. 解决字符串耦合问题"></a>3. 解决字符串耦合问题</h3><ul>
+<li><p>声明时，key相同，数据不会重复显示</p>
+  <pre class="line-numbers language-none"><code class="language-none">let hh ={
+    song:{js:100 , css :50},
+    song:{js:60 , css:100}
 }
-@keyframes jump {
-  0% {
-    transform: translateX(0px);
-  }
-  40% {
-    transform: translateX(150px);
-    clip-path: ellipse(50% 50% at 50% 50%);
-  }
-  50% {
-    transform: translateX(150px);
-    clip-path: ellipse(46% 50% at 46% 50%);
-  }
-  90% {
-    transform: translateX(0px);
-    clip-path: ellipse(50% 50% at 50% 50%);
-  }
-  100% {
-    transform: translateX(0px);
-    clip-path: ellipse(80% 50% at 80% 50%);
-  }
-}
-.demo-1 .circle .word {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: #CC9999;
-  border-radius: 30%;
-  height:30px;
-}
-.demo-1 .circle .word p {
-  color: #666699;
-}
-</style>
-<div id="catalog">索引</div>
-<style>
-#catalog{
-            color: #1CA28A;
-            font-size: 30px;
-            font-weight: bold;
-            width: 60px;
-            height: 40px;
-            animation: bigger 2s ease-in 0.5s  infinite alternate;
-            font-family:"微软雅黑","黑体","宋体";
-        margin-left：50px;
-        } 
-        @keyframes bigger {
-            0%{
-                transform:scale(0.7);
-            }
-            50%{
-                transform:scale(0.9);
-            }
-            100%{
-                transform:scale(1.2);
-            }
-        }
-</style>
+console.log(hh)<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-<style>
-        #side-menu {
-            list-style: none;
-            border: 3px solid #1CA28A    ;
-            border-radius: 10px;
-            width: 300px;
-            padding: 20px;
-            background: #88AE5C;
-        margin:0 auto;
-        margin-bottom: 50px;
-        }
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092009035.png" alt="image-20210428092009035"></p>
+</li>
+<li><p>声明时加上symbol</p>
+  <pre class="line-numbers language-none"><code class="language-none"> let user1 ={
+        name:'song',
+        key:Symbol('song')
+    };
+    let user2 ={
+        name:'song',
+        key:Symbol('song')
+    };
+let hh ={
+    [user1.key]:{js:100 , css :50},
+    [user2.key]:{js:60 , css:100}
+};
+console.log(hh);<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 
-        #side-menu li {
-            font-size: 18px;
-            line-height: 2.4em;
-            border-bottom: dotted 1px grey ;
-            /* 添加分隔符 */
-        }
-        #side-menu span{
-            font-weight: bolder;
-            color: khaki;
-        } 
-        #side-menu li:last-child {
-            border: none;
-            /* 取消最后一个分隔符 */
-        }
-        #side-menu li a {
-            color: #EFD735    ;
-            text-decoration: none;
-        }
-        #side-menu li a:hover {
-            color: rgb(255, 100, 200);
-        }
-</style>
-<ul id="side-menu">
-    <li><a href="#download"><span>①</span> 介绍</a></li>
-    <li><a href="#unzip"><span>②</span> Transition 基础写法和经验</a></li>
-    <li><a href="#settings"><span>③</span> animation 写法和经验总结</a></li>
-    <li><a href="#compile"><span>④</span> 时间函数</a></li>
+<p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/image-20210428092714562.png" alt="image-20210428092714562"></p>
+</li>
 </ul>
-
-
-<div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="download"><strong><span>①</span> 介绍</strong></div>
-
-
-<ul>
-<li>css3动画包括 <strong>transtion</strong> 和 <strong>animation</strong>   </li>
-<li></li>
-<li>动画常和<strong>transform属性</strong>常用</li>
-<li></li>
-<li>transform并不是动画属性</li>
-</ul>
-<div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="unzip"><strong><span>②</span> Transition 基础写法和经验</strong></div>
-
-<p><strong>过渡</strong></p>
-<p><strong>基础写法</strong>  ：  属性名称   过渡时间   时间函数   延迟时间    （顺序 书写规范）</p>
-<p><strong>用法注意</strong>： </p>
-<ul>
-<li>①属性有变化的时候才会过渡   </li>
-<li>②初始化后再应用   </li>
-<li>③时间函数改变动画速度</li>
-</ul>
-<p>tip： </p>
-<ul>
-<li>1.display 不能和transition一起使用  （文档流限制）</li>
-<li></li>
-<li>2.transition 尽量不用all</li>
-<li></li>
-<li>3.常见的闪动   我们可以  perspective  和 backface-visibility</li>
-<li></li>
-<li>4.详见时间函数 <a target="_blank" rel="noopener" href="https://blog.csdn.net/zhy13087344578/article/details/79651857">时间函数</a></li>
-</ul>
-<p><strong>拓展：</strong></p>
-<p><strong>transform属性</strong>：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_transform.asp">教程</a></p>
-<p>transform 属性向元素应用 2D 或 3D 转换。该属性允许我们对元素进行<strong>旋转、缩放、移动或倾斜</strong>。</p>
-<p>常见属性</p>
-<ul>
-<li><strong>translate</strong>  translateX translateY   x轴 y轴 定向移动    单位：百分比或者px</li>
-<li></li>
-<li><strong>scaleX（x，y）</strong>  缩放比例  填倍数</li>
-<li></li>
-<li><strong>rotate(<em>angle</em>)</strong>   旋转角度   rotate(60deg)</li>
-<li></li>
-<li><strong>skew（angle）</strong>  倾斜角度</li>
-</ul>
-<div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="settings"><strong><span>③</span> animation 写法和经验总结</strong></div>
-
-<p><strong>组建动画</strong></p>
-<p><strong>基础写法</strong>：<a target="_blank" rel="noopener" href="https://www.w3school.com.cn/cssref/pr_animation.asp">教程</a></p>
-<p> 动画名称（name）–@keyframe    过渡时间     时间函数   延迟时间</p>
-<p>播放次数   播放方向   停止播放   是否暂停</p>
-<p>tip：</p>
-<ul>
-<li>1.animation 解决了transtion display：none  的BUG   （手动添加）</li>
-<li></li>
-<li>2.可实现跳动  根据百分比切换</li>
-</ul>
-<div style="width:92%;color:#EFD735;font-size:25px;display: inline-block;margin-top:20px;margin-bottom:20px;" id="compile"><strong><span>④</span> 时间函数</strong></div>
-
-<ul>
-<li><a target="_blank" rel="noopener" href="https://blog.csdn.net/zhy13087344578/article/details/79651857">时间函数</a></li>
-<li></li>
-<li>线性 ：cubic-bezier  实现动画的线性过渡</li>
-<li></li>
-<li>非线性：steps （1，start|end）  实现动画的阶跃变化</li>
-</ul>
-<p><strong>简单应用：</strong></p>
-<p>loading：<br><img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/f22d4de2-0638-47c1-8d21-4e4beacb6e12.png" alt="image.png"></p>
 
                 
             </div>
@@ -698,7 +579,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/</a>
+                    <a href="http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/27/symbol-dui-xiang/">http://song-zejian.gitee.io/sword__song__blog/sword__song__blog/2021/04/27/symbol-dui-xiang/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -736,8 +617,8 @@
                     
                         <div class="article-tag">
                             
-                                <a href="/sword__song__blog/tags/css/">
-                                    <span class="chip bg-color">css</span>
+                                <a href="/sword__song__blog/tags/ES6-JavaScript/">
+                                    <span class="chip bg-color">ES6 JavaScript</span>
                                 </a>
                             
                         </div>
@@ -903,9 +784,9 @@
 
 <script type="text/javascript">
     disqus_config = function () {
-        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/';
-        this.page.identifier = '/sword__song__blog/2021/04/24/css-dong-hua-ji-chu/';
-        this.page.title = 'CSS动画基础';
+        this.page.url = 'http://song-zejian.gitee.io/sword__song__blog/2021/04/27/symbol-dui-xiang/';
+        this.page.identifier = '/sword__song__blog/2021/04/27/symbol-dui-xiang/';
+        this.page.title = 'ES6 symbol对象';
     };
     let disqus_shortname = '';
 
@@ -935,9 +816,60 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
+            <div class="card">
+                <a href="/sword__song__blog/2021/04/27/symbol-dui-xiang/">
+                    <div class="card-image">
+                        
+                        
+                        <img src="/sword__song__blog/medias/featureimages/3.jpg" class="responsive-img" alt="ES6 symbol对象">
+                        
+                        <span class="card-title">ES6 symbol对象</span>
+                    </div>
+                </a>
+                <div class="card-content article-content">
+                    <div class="summary block-with-text">
+                        
+                            ES6新增数据类型
+                        
+                    </div>
+                    <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-27
+                            </span>
+                        <span class="publish-author">
+                            
+                            <i class="fas fa-bookmark fa-fw icon-category"></i>
+                            
+                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
+                                    基础笔记
+                                </a>
+                            
+                            
+                        </span>
+                    </div>
+                </div>
+
+                
+                <div class="card-action article-tags">
+                    
+                    <a href="/sword__song__blog/tags/ES6-JavaScript/">
+                        <span class="chip bg-color">ES6 JavaScript</span>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+        
+        
+        <div class="article col s12 m6" data-aos="fade-up">
+            <div class="article-badge right-badge text-color">
+                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
+            </div>
             <div class="card">
                 <a href="/sword__song__blog/2021/04/25/es6-mo-ban-zi-mian-liang/">
                     <div class="card-image">
@@ -955,9 +887,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-25
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -975,55 +907,6 @@
                     
                     <a href="/sword__song__blog/tags/ES6/">
                         <span class="chip bg-color">ES6</span>
-                    </a>
-                    
-                </div>
-                
-            </div>
-        </div>
-        
-        
-        <div class="article col s12 m6" data-aos="fade-up">
-            <div class="article-badge right-badge text-color">
-                下一篇&nbsp;<i class="fas fa-chevron-right"></i>
-            </div>
-            <div class="card">
-                <a href="/sword__song__blog/2021/04/24/javascript-bian-liang-li-jie/">
-                    <div class="card-image">
-                        
-                        
-                        <img src="/sword__song__blog/medias/featureimages/0.jpg" class="responsive-img" alt="JavaScript变量理解">
-                        
-                        <span class="card-title">JavaScript变量理解</span>
-                    </div>
-                </a>
-                <div class="card-content article-content">
-                    <div class="summary block-with-text">
-                        
-                            基础不牢，地动山摇
-                        
-                    </div>
-                    <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2021-04-24
-                            </span>
-                        <span class="publish-author">
-                            
-                            <i class="fas fa-bookmark fa-fw icon-category"></i>
-                            
-                            <a href="/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/" class="post-category">
-                                    基础笔记
-                                </a>
-                            
-                            
-                        </span>
-                    </div>
-                </div>
-                
-                <div class="card-action article-tags">
-                    
-                    <a href="/sword__song__blog/tags/JavaScript/">
-                        <span class="chip bg-color">JavaScript</span>
                     </a>
                     
                 </div>
