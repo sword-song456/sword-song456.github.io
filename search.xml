@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>JavaScript语句</title>
+      <link href="/sword__song__blog/2021/04/29/javascript-yu-ju/"/>
+      <url>/sword__song__blog/2021/04/29/javascript-yu-ju/</url>
+      
+        <content type="html"><![CDATA[<h1 id="JavaScript语句"><a href="#JavaScript语句" class="headerlink" title="JavaScript语句"></a>JavaScript语句</h1><h3 id="1-for-in-与-for-of"><a href="#1-for-in-与-for-of" class="headerlink" title="1. for-in 与 for-of"></a>1. for-in 与 for-of</h3><h4 id="for-in"><a href="#for-in" class="headerlink" title="for-in"></a>for-in</h4><ul><li><p>严格的迭代语句，用于每局对象中的<strong>非符号键属性</strong>。</p>  <pre class="line-numbers language-none"><code class="language-none">const hh ={    nihao:'sdsd',    djadja:"dad"}for(const n in hh){    console.log(n)}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210502110930.png" alt="image-20210502110930910"></p><p>  打印出了<strong>key</strong></p></li><li><p>遍历没有顺序</p></li><li><p>更适合遍历对象，非数组</p>  <pre class="line-numbers language-none"><code class="language-none">for(const hh in window){    console.log(hh)}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210502110540.png" alt="image-20210502110540735"></p></li></ul><h4 id="for-of"><a href="#for-of" class="headerlink" title="for-of"></a>for-of</h4><ul><li><p>严格的迭代语句，遍历<strong>可迭代对象</strong>的元素</p></li><li><p>遍历<strong>数/数组对象/字符串/map/set</strong>等拥有迭代器对象的集合</p>  <pre class="line-numbers language-none"><code class="language-none">for (const el of [2,4,6,8]) {    console.log(el);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><p>  <img src="C:/Users/swordSong/AppData/Roaming/Typora/typora-user-images/image-20210502111229789.png" alt="image-20210502111229789"></p></li></ul><h4 id="for-in-for-of-的区别"><a href="#for-in-for-of-的区别" class="headerlink" title="for-in for-of 的区别"></a>for-in for-of 的区别</h4><ul><li><p>for-in 适用于遍历对象的属性，键值</p></li><li><p>for-of 适用于遍历可迭代对象的元素 例如数组、数、字符串等等</p>  <pre class="line-numbers language-none"><code class="language-none">for (const el of [2,4,6,8]) {    console.log(el);}for (const el in [2,4,6,8]) {    console.log(el);}<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre><p>  <img src="https://gitee.com/song-zejian/markdown_image/raw/master/img/20210502111511.png" alt="image-20210502111511490"></p></li></ul><h3 id="2-Switch语句"><a href="#2-Switch语句" class="headerlink" title="2. Switch语句"></a>2. Switch语句</h3><ul><li><p>常规用法</p>  <pre class="line-numbers language-none"><code class="language-none">const num = 2;switch (num){    case 1 :{        console.log('hh');        break;    }    case 2 :{        console.log('mm');        break;    }}// mm<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li><li><p>ES中，可以用于所有数据类型，条件的值可以不需要是常量，也可以是变量或表达式</p>  <pre class="line-numbers language-none"><code class="language-none">// 字符串switch ('helloworld!') {    case 'hello' + 'world' +'!':        console.log('hh');        break;    case 'j':        console.log('s');        break;}// hh<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>  <pre class="line-numbers language-none"><code class="language-none">// 表达式let num = 25;switch (true){    case num &lt; 0:        console.log('小于0');        break;    case num &gt;= 0 &amp;&amp; num &lt;= 10 :        console.log("0 10 之间") ;        break;    case num &gt; 10 :        console.log('大于十');        break;}// 大于十<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre></li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 基础笔记 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> JavaScript </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>flex布局在react-native中的运用</title>
       <link href="/sword__song__blog/2021/04/29/flex-bu-ju-zai-react-native-zhong-de-yun-yong/"/>
       <url>/sword__song__blog/2021/04/29/flex-bu-ju-zai-react-native-zhong-de-yun-yong/</url>
