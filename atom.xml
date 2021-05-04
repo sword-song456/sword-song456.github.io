@@ -6,7 +6,7 @@
   <link href="http://song-zejian.gitee.io/sword__song__blog/atom.xml" rel="self"/>
   
   <link href="http://song-zejian.gitee.io/sword__song__blog/"/>
-  <updated>2021-05-02T03:46:24.117Z</updated>
+  <updated>2021-05-04T09:22:17.951Z</updated>
   <id>http://song-zejian.gitee.io/sword__song__blog/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>变量、作用域与内存&#39;</title>
+    <link href="http://song-zejian.gitee.io/sword__song__blog/2021/05/04/bian-liang-zuo-yong-yu-yu-nei-cun/"/>
+    <id>http://song-zejian.gitee.io/sword__song__blog/2021/05/04/bian-liang-zuo-yong-yu-yu-nei-cun/</id>
+    <published>2021-05-04T06:07:11.000Z</published>
+    <updated>2021-05-04T09:22:17.951Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h1 id=&quot;JavaScript-变量、作用域与内存&quot;&gt;&lt;a href=&quot;#JavaScript-变量、作用域与内存&quot; class=&quot;headerlink&quot; title=&quot;JavaScript 变量、作用域与内存&quot;&gt;&lt;/a&gt;JavaScript</summary>
+        
+      
+    
+    
+    
+    <category term="基础笔记" scheme="http://song-zejian.gitee.io/sword__song__blog/categories/%E5%9F%BA%E7%A1%80%E7%AC%94%E8%AE%B0/"/>
+    
+    
+    <category term="JavaScript" scheme="http://song-zejian.gitee.io/sword__song__blog/tags/JavaScript/"/>
+    
+  </entry>
   
   <entry>
     <title>JavaScript语句</title>
