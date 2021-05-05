@@ -4,6 +4,19 @@
   
     
     <entry>
+      <title>基本引用类型</title>
+      <link href="/sword__song__blog/2021/05/05/ji-ben-yin-yong-lei-xing/"/>
+      <url>/sword__song__blog/2021/05/05/ji-ben-yin-yong-lei-xing/</url>
+      
+        <content type="html"><![CDATA[<h1 id="GMT和UTC"><a href="#GMT和UTC" class="headerlink" title="GMT和UTC"></a>GMT和UTC</h1><p><a href="http://baike.baidu.com/view/37429.htm">GMT</a>，即格林尼治标准时间，也就是世界时。GMT的正午是指当太阳横穿格林尼治子午线（本初子午线）时的时间。但由于地球自转不均匀不规则，导致GMT不精确，现在已经不再作为世界标准时间使用。</p><p><a href="http://baike.baidu.com/link?url=WuopdxowYjyGEkfBMX2QFm5kbOBdSo-gvISUJ4Q23HZ3bbYQkWhoJH4FQZhZmN59w2J3lQUY0y6s5GjpdxraAa">UTC</a>，即协调世界时。UTC是以原子时秒长为基础，在时刻上尽量接近于GMT的一种时间计量系统。为确保UTC与GMT相差不会超过0.9秒，在有需要的情况下会在UTC内加上正或负闰秒。UTC现在作为世界标准时间使用。</p><p>所以，UTC与GMT基本上等同，误差不超过0.9秒。</p>]]></content>
+      
+      
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>变量、作用域与内存&#39;</title>
       <link href="/sword__song__blog/2021/05/04/bian-liang-zuo-yong-yu-yu-nei-cun/"/>
       <url>/sword__song__blog/2021/05/04/bian-liang-zuo-yong-yu-yu-nei-cun/</url>

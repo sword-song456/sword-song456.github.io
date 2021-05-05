@@ -15,6 +15,17 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
+<script async src="https://www.googletagmanager.com/gtag/js?id="></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() {
+        dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+    gtag('config', '');
+</script>
+
 
     <title>关于 | Blog-Sword</title>
     <link rel="icon" type="image/png" href="/sword__song__blog/medias/logo2.png">
@@ -29,11 +40,21 @@
 
     <script src="/sword__song__blog/libs/jquery/jquery.min.js"></script>
 
-<meta name="generator" content="Hexo 5.4.0">
+<meta name="generator" content="Hexo 5.4.0"><link rel="alternate" href="/sword__song__blog/atom.xml" title="Blog-Sword" type="application/atom+xml">
+
 <style>.github-emoji { position: relative; display: inline-block; width: 1.2em; min-height: 1.2em; overflow: hidden; vertical-align: top; color: transparent; }  .github-emoji > span { position: relative; z-index: 10; }  .github-emoji img, .github-emoji .fancybox { margin: 0 !important; padding: 0 !important; border: none !important; outline: none !important; text-decoration: none !important; user-select: none !important; cursor: auto !important; }  .github-emoji img { height: 1.2em !important; width: 1.2em !important; position: absolute !important; left: 50% !important; top: 50% !important; transform: translate(-50%, -50%) !important; user-select: none !important; cursor: auto !important; } .github-emoji-fallback { color: inherit; } .github-emoji-fallback img { opacity: 0 !important; }</style>
-<link rel="alternate" href="/sword__song__blog/atom.xml" title="Blog-Sword" type="application/atom+xml">
 </head>
 
+
+
+   <style>
+    body{
+       background-image: url(https://gitee.com/song-zejian/markdown_image/raw/master/img/20210505150351.png);
+       background-repeat:no-repeat;
+       background-size:cover;
+       background-attachment:fixed;
+    }
+</style>
 
 
 
@@ -105,17 +126,6 @@
       <i class="fas fa-user-circle" style="zoom: 0.6;"></i>
       
       <span>关于</span>
-    </a>
-    
-  </li>
-  
-  <li class="hide-on-med-and-down nav-item">
-    
-    <a href="/sword__song__blog/contact" class="waves-effect waves-light">
-      
-      <i class="fas fa-comments" style="zoom: 0.6;"></i>
-      
-      <span>留言板</span>
     </a>
     
   </li>
@@ -197,17 +207,6 @@
 			    <i class="fa-fw fas fa-user-circle"></i>
 			
 			关于
-		</a>
-          
-        </li>
-        
-        <li class="m-nav-item">
-	  
-		<a href="/sword__song__blog/contact" class="waves-effect waves-light">
-			
-			    <i class="fa-fw fas fa-comments"></i>
-			
-			留言板
 		</a>
           
         </li>
@@ -332,12 +331,12 @@
 </div>
 
 
-<script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/sword__song__blog/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
-</script>
-
+    <script>
+        // 每天切换 banner 图.  Switch banner image every day.
+        var bannerUrl = "/sword__song__blog/medias/banner/" + new Date().getDay() + '.jpg';
+        $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    </script>
+    
 
     </div>
 </div>
@@ -351,7 +350,7 @@
                     <div class="post-statis col l4 hide-on-med-and-down" data-aos="zoom-in-right">
                         
 <div class="statis">
-    <span class="count"><a href="/sword__song__blog/">11</a></span>
+    <span class="count"><a href="/sword__song__blog/">12</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -381,7 +380,7 @@
                                 <div class="post-statis hide-on-large-only" data-aos="zoom-in-right">
                                     
 <div class="statis">
-    <span class="count"><a href="/sword__song__blog/">11</a></span>
+    <span class="count"><a href="/sword__song__blog/">12</a></span>
     <span class="name">文章</span>
 </div>
 
@@ -555,7 +554,7 @@
                 name: '文章篇数',
                 type: 'line',
                 color: ['#6772e5'],
-                data: [0,0,0,0,0,0,0,0,0,0,0,10,1],
+                data: [0,0,0,0,0,0,0,0,0,0,0,10,2],
                 markPoint: {
                     symbolSize: 45,
                     color: ['#fa755a','#3ecf8e','#82d3f4'],
@@ -597,7 +596,7 @@
                 type: 'pie',
                 radius: '50%',
                 color: ['#6772e5', '#ff9e0f', '#fa755a', '#3ecf8e', '#82d3f4', '#ab47bc', '#525f7f', '#f51c47', '#26A69A'],
-                data: [{"name":"教程","value":1},{"name":"个人简介","value":1},{"name":"基础笔记","value":8},{"name":"读书笔记","value":1}],
+                data: [{"name":"基础笔记","value":8},{"name":"教程","value":1},{"name":"个人简介","value":1},{"name":"读书笔记","value":1}],
                 itemStyle: {
                     emphasis: {
                         shadowBlur: 10,
@@ -621,7 +620,7 @@
         xAxis: [
             {
                 type: 'category',
-                data: ["JavaScript","ES6","hexo","启航","成长型思维","git","css","react-native"]
+                data: ["JavaScript","ES6","css","react-native","hexo","git","启航","成长型思维"]
             }
         ],
         yAxis: [
@@ -690,10 +689,10 @@
         <div class="col s12 m6 l6" data-aos="fade-up">
             <div class="skillbar">
                 <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 80%">
+                     style="background: linear-gradient(to right, #9900FF 0%, #CC66FF 100%); width: 30%">
                     <span>JavaScript</span>
                 </div>
-                <div class="skill-bar-percent">80%</div>
+                <div class="skill-bar-percent">30%</div>
             </div>
         </div>
         
@@ -701,10 +700,10 @@
         <div class="col s12 m6 l6" data-aos="fade-up">
             <div class="skillbar">
                 <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 80%">
+                     style="background: linear-gradient(to right, #2196F3 0%, #42A5F5 100%); width: 50%">
                     <span>HTML5</span>
                 </div>
-                <div class="skill-bar-percent">80%</div>
+                <div class="skill-bar-percent">50%</div>
             </div>
         </div>
         
@@ -712,10 +711,10 @@
         <div class="col s12 m6 l6" data-aos="fade-up">
             <div class="skillbar">
                 <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 70%">
+                     style="background: linear-gradient(to right, #00BCD4 0%, #80DEEA 100%); width: 50%">
                     <span>CSS</span>
                 </div>
-                <div class="skill-bar-percent">70%</div>
+                <div class="skill-bar-percent">50%</div>
             </div>
         </div>
         
@@ -723,10 +722,10 @@
         <div class="col s12 m6 l6" data-aos="fade-up">
             <div class="skillbar">
                 <div class="skillbar-title"
-                     style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 90%">
+                     style="background: linear-gradient(to right, #4CAF50 0%, #81C784 100%); width: 10%">
                     <span>Vue</span>
                 </div>
-                <div class="skill-bar-percent">90%</div>
+                <div class="skill-bar-percent">10%</div>
             </div>
         </div>
         
@@ -752,8 +751,34 @@
         <div class="tag-chips center-align">
             
             
+            <a href="/sword__song__blog/tags/ES6/">
+                <span class="chip center-align waves-effect waves-light chip-default">ES6</span>
+            </a>
+            
+            
+            
+            <a href="/sword__song__blog/tags/css/">
+                <span class="chip center-align waves-effect waves-light chip-default">css</span>
+            </a>
+            
+            
+            
+            
+            
+            <a href="/sword__song__blog/tags/react-native/">
+                <span class="chip center-align waves-effect waves-light chip-default">react-native</span>
+            </a>
+            
+            
+            
             <a href="/sword__song__blog/tags/hexo/">
                 <span class="chip center-align waves-effect waves-light chip-default">hexo</span>
+            </a>
+            
+            
+            
+            <a href="/sword__song__blog/tags/git/">
+                <span class="chip center-align waves-effect waves-light chip-default">git</span>
             </a>
             
             
@@ -766,32 +791,6 @@
             
             <a href="/sword__song__blog/tags/%E6%88%90%E9%95%BF%E5%9E%8B%E6%80%9D%E7%BB%B4/">
                 <span class="chip center-align waves-effect waves-light chip-default">成长型思维</span>
-            </a>
-            
-            
-            
-            <a href="/sword__song__blog/tags/git/">
-                <span class="chip center-align waves-effect waves-light chip-default">git</span>
-            </a>
-            
-            
-            
-            
-            
-            <a href="/sword__song__blog/tags/css/">
-                <span class="chip center-align waves-effect waves-light chip-default">css</span>
-            </a>
-            
-            
-            
-            <a href="/sword__song__blog/tags/ES6/">
-                <span class="chip center-align waves-effect waves-light chip-default">ES6</span>
-            </a>
-            
-            
-            
-            <a href="/sword__song__blog/tags/react-native/">
-                <span class="chip center-align waves-effect waves-light chip-default">react-native</span>
             </a>
             
             
@@ -942,7 +941,7 @@
             <br>
             
             &nbsp;<i class="fas fa-chart-area"></i>&nbsp;站点总字数:&nbsp;<span
-                class="white-color">4.7k</span>&nbsp;字
+                class="white-color">4.9k</span>&nbsp;字
             
             
             
@@ -1131,6 +1130,16 @@ $(function () {
     <script src="/sword__song__blog/js/matery.js"></script>
 
     <!-- Baidu Analytics -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
 
     <!-- Baidu Push -->
 
